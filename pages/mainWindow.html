@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TODO List</title>
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../assets/style.css">
+     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-dark bg-light p-4 " style="background-color: hsl(92, 15%, 49%) !important; opacity: 0.7;" >
+        <a class="navbar-brand text-white"> <i class="fas fa-check-double" style="font-size: 2.3ex;"></i>  <I>Sumeyye's TODO List</I>   </a> 
+        <div class="col-md-6 d-flex">
+          <input
+            type="text"
+            class="form-control m-1"
+            id="todoValue"
+          />
+          <button class="btn btn-warning m-1 text-white" id="addBtn" style="background-color: hsl(29, 69%, 55%) !important;">Ekle</button>
+          <button class="btn btn-danger m-1" id="closeBtn" >Çıkış</button>
+        </div>
+      </nav>
+      <div class="container main-container mt-3">
+        <div class="todo-container container">
+        <div class="alert-container row">
+          <div class="alert alert-warning col-md-8 offset-2 ">
+            <b>Herhangi bir TODO bulunmamaktadır!!!</b>
+          </div>
+        </div>
+    </div>
+      </div>
+
+      <nav class="navbar fixed-bottom bg-light " style="opacity: 0.7;">
+          <span class="m-3">Toplam Kayıt Sayısı : <b class="total-count-container"></b></span>
+        </nav>
+
+
+    <script src="../assets/mainWindow.js"></script>
+</body>
+</html>
